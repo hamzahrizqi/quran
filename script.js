@@ -3,7 +3,7 @@ const surah = params.get("surah");
 let surat = [];
 const getSurat = (search) => {
     console.log(search);
-    fetch("quran_id.json")
+    fetch("quran.json")
         .then((response) => response.json())
         .then((data) => {
             let str = "";
@@ -40,7 +40,7 @@ const getSurat = (search) => {
         .catch((error) => console.error(error));
 };
 const getSurah = (surah) => {
-    fetch("quran_id.json")
+    fetch("quran.json")
         .then((response) => response.json())
         .then((data) => {
             data = data[surah - 1];
