@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'Amiri', serif;
+}
+
+.container {
+    max-width: 480px;
+    margin: auto;
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+.search-bar {
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 10;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 90%;
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    background: transparent;
+}
+
+.surah-list {
+    padding: 8px 0;
+}
+
+.surah-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.ayah-item {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.ayah-item .text {
+    text-align: right;
+    font-size: 180%;
+}
+
+.ayah-item .translation {
+    text-align: justify;
+}
+
+.ayah-item .text span {
+    border: 1px solid #000;
+    padding: 2px 4px;
+    border-radius: 50%;
+    font-size: 70%;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.surah-item:hover {
+    background-color: #f9f9f9;
+}
+
+.surah-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.surah-number {
+    width: 32px;
+    height: 32px;
+    background: #e0f2f1;
+    color: #00796b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.surah-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.surah-meta {
+    font-size: 12px;
+    color: #777;
+}
+
+.surah-arabic {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.surah-title {
+    text-align: center;
+    margin-top: 0;
+}
